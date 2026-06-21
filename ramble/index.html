@@ -4,43 +4,50 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ramble — Your private voice journal</title>
-<meta name="description" content="Ramble is a privacy-first voice journal. Speak your mind, and it stays yours — transcribed and encrypted on your device. No accounts. No tracking.">
+<meta name="description" content="Ramble is a privacy-first voice journal. Press record, speak your mind, and it stays yours — transcribed and encrypted on your device. No accounts. No tracking.">
 <meta property="og:title" content="Ramble — Your private voice journal">
 <meta property="og:description" content="Speak your mind. It stays yours — on-device, encrypted, private.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#D6886F">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+
 <div class="wrap">
 
   <nav class="nav">
-    <div class="brand"><span class="dot"></span> Ramble</div>
+    <a class="brand" href="/ramble/"><img class="logo" src="/assets/favicon.svg" alt=""> Ramble</a>
     <div class="nav-links">
       <a href="#how">How it works</a>
       <a href="#features">Features</a>
       <a href="#privacy">Privacy</a>
-      <a href="/ramble/privacy/">Privacy Policy</a>
+      <a href="#faq">FAQ</a>
     </div>
   </nav>
 
   <header class="hero">
-    <span class="eyebrow">Private voice journaling</span>
-    <h1>Speak your mind.<br><span class="grad">It stays yours.</span></h1>
-    <p class="lead">Ramble turns a quiet moment into a journal entry — just press record and talk. Everything is transcribed and encrypted on your device. No accounts, no tracking.</p>
-    <div class="cta">
-      <a class="btn primary" href="#">Download on the App Store <span class="soon">soon</span></a>
-      <a class="btn" href="#">Get it on Google Play <span class="soon">soon</span></a>
+    <div class="hero-copy">
+      <span class="eyebrow">Private voice journaling</span>
+      <h1>Speak your mind.<br><span class="grad">It stays yours.</span></h1>
+      <p class="lead">Ramble turns a quiet moment into a journal entry — just press record and talk. Every word is transcribed and encrypted on your device. No accounts, no servers, no tracking.</p>
+      <div class="cta">
+        <a class="btn primary" href="#">App Store <span class="soon">soon</span></a>
+        <a class="btn" href="#">Google Play <span class="soon">soon</span></a>
+      </div>
+      <div class="trust">
+        <span><svg class="i"><use href="#i-lock"/></svg> Encrypted on device</span>
+        <span><svg class="i"><use href="#i-off"/></svg> Works offline</span>
+        <span><svg class="i"><use href="#i-globe"/></svg> 30 languages</span>
+      </div>
     </div>
-
-    <div class="mock" aria-hidden="true">
-      <div class="notch"></div>
-      <div class="screen">
-        <div class="ring"><span></span></div>
-        <div class="cap">Listening…</div>
-        <div class="sub">Tap to capture how you feel</div>
+    <div class="hero-device">
+      <div class="device">
+        <img src="/assets/screen-mood.png" alt="Ramble — tagging how a moment felt" loading="eager">
       </div>
     </div>
   </header>
@@ -48,12 +55,12 @@
   <section id="how">
     <div class="section-head">
       <h2>Journaling without the friction</h2>
-      <p>Writing is work. Talking isn't. Ramble is built for the thoughts you'd never sit down to type.</p>
+      <p>Writing is work. Talking isn’t. Ramble is built for the thoughts you’d never sit down to type.</p>
     </div>
     <div class="steps">
-      <div class="step"><h3>Record</h3><p>Press once and speak. Live, on-device transcription captures every word — no typing.</p></div>
+      <div class="step"><h3>Record</h3><p>Press once and speak. Live, on-device transcription captures every word — no typing, no waiting.</p></div>
       <div class="step"><h3>Reflect</h3><p>Tag a mood, a category, the song in your head. Ramble adapts its tone to your moment.</p></div>
-      <div class="step"><h3>Remember</h3><p>Browse your archive, search transcripts, and watch your patterns emerge in gentle insights.</p></div>
+      <div class="step"><h3>Remember</h3><p>Browse your archive, search transcripts, and watch your patterns surface in gentle insights.</p></div>
     </div>
   </section>
 
@@ -63,20 +70,32 @@
       <p>Everything you need to keep a real, lasting record of your inner life.</p>
     </div>
     <div class="grid">
-      <div class="card"><div class="ic i-peach">🎙️</div><h3>Voice-first</h3><p>Unlimited recordings with accurate on-device transcription. Your voice, in your words.</p></div>
-      <div class="card"><div class="ic i-lav">🌙</div><h3>Adaptive tone</h3><p>Ramble reads the moment — time of day and feeling — and responds with warmth or with calm.</p></div>
-      <div class="card"><div class="ic i-sage">🔒</div><h3>Encrypted on device</h3><p>Entries and audio are sealed with AES-256. The key lives on your device, not on a server.</p></div>
-      <div class="card"><div class="ic i-honey">📊</div><h3>Gentle insights</h3><p>Streaks, moods over time, the words you reach for most — your year, reflected back.</p></div>
-      <div class="card"><div class="ic i-rose">🎵</div><h3>Song of the moment</h3><p>Attach the track that captures a memory, so a feeling always has its soundtrack.</p></div>
-      <div class="card"><div class="ic i-blue">📦</div><h3>You own your data</h3><p>Export and back up anytime with a password only you know. Move it between your phones — free.</p></div>
+      <div class="card"><span class="fic c-peach"><svg class="i"><use href="#i-wave"/></svg></span><h3>Voice-first</h3><p>Unlimited recordings with accurate on-device transcription. Your voice, in your own words.</p></div>
+      <div class="card"><span class="fic c-lav"><svg class="i"><use href="#i-moon"/></svg></span><h3>Adaptive tone</h3><p>Ramble reads the moment — time of day and feeling — and responds with warmth, energy, or calm.</p></div>
+      <div class="card"><span class="fic c-sage"><svg class="i"><use href="#i-lock"/></svg></span><h3>Encrypted on device</h3><p>Entries and audio are sealed with AES-256. The key lives in your device’s secure keystore, not on a server.</p></div>
+      <div class="card"><span class="fic c-honey"><svg class="i"><use href="#i-chart"/></svg></span><h3>Gentle insights</h3><p>Streaks, moods over time, the words you reach for most — your months and years, reflected back.</p></div>
+      <div class="card"><span class="fic c-rose"><svg class="i"><use href="#i-music"/></svg></span><h3>Song of the moment</h3><p>Attach the track that captures a memory, so a feeling always keeps its soundtrack.</p></div>
+      <div class="card"><span class="fic c-blue"><svg class="i"><use href="#i-box"/></svg></span><h3>You own your data</h3><p>Export an encrypted backup with a password only you know — and move it between your iPhone and Android, free.</p></div>
     </div>
   </section>
 
   <section id="privacy">
     <div class="band">
       <h2>Private by design — not as a setting</h2>
-      <p>Ramble has no servers and no account. Your journal never leaves your device unless you explicitly choose to back it up or connect an optional feature — and we tell you exactly what happens before you do. No ads. No analytics. No tracking. Ever.</p>
-      <p style="margin-top:18px"><a href="/ramble/privacy/">Read the full Privacy Policy →</a></p>
+      <p>Ramble has no servers and no account. Your journal never leaves your device unless you explicitly choose to back it up or turn on an optional feature — and we tell you exactly what happens before you do. No ads. No analytics. No tracking. Ever.</p>
+      <p class="band-link"><a href="/ramble/privacy/">Read the full Privacy Policy →</a></p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="section-head"><h2>Questions, answered</h2></div>
+    <div class="faq">
+      <details><summary>Is my journal really private?</summary><p>Yes. Ramble stores everything on your device, encrypted with AES-256. There’s no account and no server that receives your entries, so there is nothing for us to read, sell, or lose.</p></details>
+      <details><summary>Does it work offline?</summary><p>The core experience — recording, transcription, moods, archive, insights — works fully offline. The only feature that reaches the internet is the optional “song of the moment” search, and only when you use it.</p></details>
+      <details><summary>How does transcription work?</summary><p>Transcription runs on your device using your operating system’s built-in speech recognition. Accuracy depends on your language, accent, and device, and improves over time with the platform.</p></details>
+      <details><summary>What happens if I lose or change my phone?</summary><p>Create an encrypted, password-protected backup from Settings and keep it somewhere safe (your Files, iCloud Drive, or Google Drive). You can restore it on any device — and because the format is shared, a backup from iPhone opens on Android and vice-versa.</p></details>
+      <details><summary>Is Ramble free?</summary><p>The core app is free. An optional “Ramble Plus” unlocks extra themes, deeper personalization, and more — but backing up and exporting your own data is always free.</p></details>
+      <details><summary>Which languages are supported?</summary><p>The interface is localized into 30 languages, including English and Turkish.</p></details>
     </div>
   </section>
 
@@ -84,14 +103,27 @@
 
 <footer>
   <div class="wrap foot">
-    <div>© 2026 Ramble. Made with care.</div>
+    <a class="brand small" href="/ramble/"><img class="logo" src="/assets/favicon.svg" alt=""> Ramble</a>
     <div class="links">
       <a href="/ramble/privacy/">Privacy</a>
       <a href="/ramble/terms/">Terms</a>
       <a href="mailto:syroxivoss9@gmail.com">Contact</a>
     </div>
+    <div class="copyright">© 2026 Ramble</div>
   </div>
 </footer>
+
+<!-- icon set (line, currentColor) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12v0M8 8v8M12 4v16M16 8v8M20 12v0"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l11-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v8"/><path d="M6.3 7.3a8 8 0 1 0 11.4 0"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></symbol>
+</svg>
 
 </body>
 </html>
